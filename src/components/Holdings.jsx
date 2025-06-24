@@ -8,7 +8,7 @@ const Holdings = () => {
   const [loading,setLoading]=useState(true);
 
   useEffect(()=>{
-      fetch("http://localhost:3002/allHoldings")
+      fetch("https://stocker-backend.vercel.app/allHoldings")
       .then((res) => res.json())
       .then((data) => setHoldings(data))
       .catch((error) => console.error("Fetch error:", error));

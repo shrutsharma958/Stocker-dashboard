@@ -7,7 +7,7 @@ const Orders = () => {
   const [allOrders, setAllOrders] = useState([]);
    
   useEffect(() => {
-    axios.get("http://localhost:3002/allOrders")
+    axios.get("https://stocker-backend.vercel.app/allOrders")
       .then((res) => {
         setAllOrders(res.data);
       });

@@ -15,7 +15,8 @@ const Home = () => {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "http://localhost:3002/",
+        "https://stocker-backend.vercel.app/"
+,
         {},
         { withCredentials: true }
       );

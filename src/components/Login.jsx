@@ -126,6 +126,7 @@ console.log("Saved to localStorage:", username);
             type="password"
             name="password"
             value={password}
+              autoComplete="current-password"
              onChange={handleOnChange}
           />
           <FormControlLabel

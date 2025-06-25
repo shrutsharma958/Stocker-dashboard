@@ -12,7 +12,7 @@ const BuyActionWindow = ({ uid, price }) => {
   const { closeBuyWindow } = useContext(GeneralContext);
 
   const handleBuyClick = (time) => {
-    axios.post("http://localhost:3002/newOrder", {
+    axios.post("https://stocker-backend.vercel.app/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,

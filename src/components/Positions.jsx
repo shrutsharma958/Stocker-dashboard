@@ -7,7 +7,7 @@ const Positions = () => {
   const[positions,setPositions]=useState([]);
 
   useEffect(()=>{
-     fetch("http://localhost:3002/allPositions")
+     fetch("https://stocker-backend.vercel.app/allPositions")
       .then((res) => res.json())
       .then((data) => setPositions(data))
       .catch((error) => console.error("Fetch error:", error))
